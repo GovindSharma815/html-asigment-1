@@ -1,0 +1,315 @@
+1. are the html tags and elements same thing?
+A1. 	almost yes,HTML Tags usually exist in pairs consisting of a starting and an ending tag. 
+	However, some tags do not have a closing tag. 
+	HTML Elements contain a starting tag, content, and an ending tag
+
+2.What are tags and attributes in HTML?
+A2.	HTML tags are what defines where an HTML element starts and where it ends. 
+	There is usually an opening bracket followed by the element’s name and, finally, a closing bracket
+	e.g -The first one is the start tag. It contains two opposite angle brackets. Examples include:
+	<title>
+	<p>
+	<b>
+		whereas attributes is what modifies an HTML element.
+		 It is usually in the form of unique words that one inserts inside the opening tag.
+		 They control the behavior of the element that follows.
+		e.g - <element attribute="value">element content</element>
+
+3.what are void elements in html? with example
+A3.	HTML elements with no content are called empty elements. The <br> tag defines a line break, and is an empty element without a closing tag: 
+	Example.<img src="https://cdn.sstatic.net/Sites/stackoverflow/company/img/logos/so/so-icon.png" />
+	<br>
+	<hr>
+	<input type="number" placeholder="Enter your favorite number">
+	Remarks
+	A void element cannot have any content but may have attributes. Void elements are self-closing, so they must not have a closing tag.
+
+4.what are html entities with example ?
+A4.	Many symbols and special characters are required while developing a web page in html, but as we know that sometimes the use of characters 
+	directly may interfere with the actual html code which have certain characters reserved and also certain characters being not available on keyboard. 
+	Thus, to avoid the conflict and at same time to be able to use different symbols in our code w3 org provides us with 'Character Entities'.
+	Some character may be reserved for HTML and cannot be used directly as it may obstruct the actual HTML codes. For example, trying to display 
+	the left and right angle brackets (<>) in the source code may cause unexpected results in the output. 
+	Similarly, white spaces as written in the source code may not display as expected in the output HTML.
+	
+Character	Description	Entity Name	Entity Number
+“ ”		non-breaking 	&nbsp;	&#160;
+“<”		less than	&lt;	&#60;
+“>”		greater than	&gt;	&#62;
+“&”		ampersand	&amp;	&#38;
+“—”		em dash	&mdash;	&#8212;
+“–”		en dash	&ndash;	&#8211;
+“©”		copyright	&copy;	&#169;
+“®”		registered trademark	&reg;	&#174;
+“™”		trademark	&trade;	&#8482;
+“☎”		phone	&phone;	&#9742;
+
+
+5.What are different types of lists in HTML? With Example
+A5.	There are 3 types of lists in HTML, namely:
+
+	1)Unordered List
+		html>
+ 
+	e.g :	<head>
+   		 <title>HTML Lists</title>
+		</head>
+ 
+	<body>
+    <h2>GeeksforGeeks</h2>
+    <h4>HTML Unordered List</h4>
+    <h4>Coding Language</h4>
+    <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Core-Java</li>
+        <li>Python</li>
+        <li>Javascript</li>
+    </ul>
+	</body>
+ 
+	</html>
+	2)Ordered List
+		The Ordered lists have an order which is either numerical or alphabetical. 
+		The <ol> tag is used to create ordered lists in HTML and just like unordered list, we use <li> tag to define or show lists inside <ol> tag.
+	Example.
+	<!DOCTYPE html>
+	<html>
+ 
+	<head>
+    	<title>HTML Lists</title>
+	</head>
+ 
+	<body>
+    	<h2>GeeksforGeeks</h2>
+    	<h4>HTML Ordered List</h4>
+    	<h4>Coding Language</h4>
+    	<ol>
+        <li>C</li>
+        <li>C++</li>
+        <li>Core-Java</li>
+        <li>Python</li>
+        <li>Javascript</li>
+    </ol>
+	</body>
+ 
+	</html>
+
+6.What is the ‘class’ attribute in HTML?
+A6.	The HTML class attribute is used to specify a single or multiple class names for an HTML element.
+	 The class name can be used by CSS and JavaScript to do some tasks for HTML elements. 
+	You can use this class in CSS with a specific class, write a period (.) character, followed by the name of the class for selecting elements.
+
+7.What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? with Example
+A7.	The basic difference between ID and Class is that the ID selector is applied only to one element in a page, 
+	whereas the class selector can be applied to several elements on a single page.	
+
+	in ID attribute only one ID selector can be attached to an element.
+	whereas in class attribute Multiple class selectors can be attached to an element.
+
+	in ID attribute in HTML, for an element, the ID name starts with the "#" symbol followed by a unique name assigned to it.
+	whereas in class "class" assigned to an element has its name starts with "." followed by class name.
+
+example 
+class 
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Class demo
+</title>
+<style>
+   .classDemo{
+       color:orange;
+       font-size:25px;
+   }
+</style>
+</head>
+<body style="text-align:center">
+	<h1>Get element by class<h1>
+	<p class="classDemo">Demo for class selector</p>
+</body>
+</html>
+
+example
+ID
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+  Id demo
+</title>
+<style>
+  #idDemo{
+     color:green;
+     font-size:25px;
+  }
+</style>
+</head>
+<body style="text-align:center">
+   <h1>Get element by Id</h1>
+   <p id="idDemo">Demo for Id selector</p>
+</body>
+</html>
+
+
+8. what are different types formatting tags in html?
+A8. 
+<b>		This is a physical tag, which is used to bold the text written between it.
+<strong>	This is a logical tag, which tells the browser that the text is important.
+<i>		This is a physical tag which is used to make text italic.
+<em>		This is a logical tag which is used to display content in italic.
+<mark>		This tag is used to highlight text.
+<u>		This tag is used to underline text written between it.
+<sup>	It displays the content slightly above the normal line.
+<sub>	It displays the content slightly below the normal line.
+<del>	This tag is used to display the deleted content.
+<ins>	This tag displays the content which is added
+<big>	This tag is used to increase the font size by one conventional unit.
+<small>	This tag is used to decrease the font size by one unit from base font size.
+
+
+9.How is Cell Padding different from Cell Spacing?
+A9. space between cell border and its inside content is called cell padding
+	space between two cell is called cell spacing.
+
+10.How can we club two or more rows or columns into a single row or column in an HTML
+table? With Example
+A10. by using colspan we can combine to different cell column
+			&
+	by using rowspan we can combine to different cell row
+
+	e.g
+	<table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td colspan="2">Sum: $180</td>
+  </tr>
+</table>
+
+
+11.What is the difference between a block-level element and an inline element
+A11.Block elements always start from a new line. Inline elements never start from a new line.
+	 Block elements cover space from left to right as far as it can go. Inline elements only cover the space as bounded by the tags in the HTML element.
+
+12.How to create a Hyperlink in HTML? With Example.
+A12.	 To make a hyperlink in an HTML page, use the <a> and </a> tags, which are the tags used to define the links.
+	The <a> tag indicates where the hyperlink starts and the </a> tag indicates where it ends. Whatever text gets added inside these tags, will work as a hyperlink.
+	 Add the URL for the link in the <a href=” ”>. Just keep in mind that you should use the <a>…</a> tags inside <body>…</body> tags.
+		E.g
+			<!DOCTYPE html>
+			<html>
+   			<head>
+     			 <title>HTML Hyperlinks</title>
+ 			  </head>
+
+  			 <body>
+    			  <h1>Company</h1>
+     			 <p>
+       			  We are a <a href="/about/about_team.htm">team</a> of professionals working
+        			 hard to provide free learning content.
+     			 </p>
+  			 </body>
+			</html>
+
+
+13.What is the use of an iframe tag? With Example.
+A13.	The ” iframe ” tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders.
+	 An inline frame is used to embed another document within the current HTML document. The HTML iframe name attribute is used to specify a reference for an <Iframe> element.
+		E,g
+			<!DOCTYPE html>
+				<html>
+ 
+				<head>
+   				 <title>HTML iframe Tag</title>
+				</head>
+ 
+			<body style="text-align: center">
+  				  <h1>google maps</h1>
+    			<h2>HTML iframe Tag</h2>
+   			 <iframe src= "https://www.google.com/maps/dir/21.1662109,72.8397314/tops+technology+career+center/@21.1737139,72.8219699,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3be04e6c2d24d613:0x5c7ca1ea557092d0!2m2!1d72.8253226!2d21.1813362?entry=ttu"  height="200" width="400">
+			</iframe>
+			</body>
+ 
+			</html>
+
+14.What is the use of a span tag? Explain with example?
+A14.	The span tag is a paired tag means it has both open(<) and closing (>) tags, and it is mandatory to close the tag.
+	 The span tag is used for the grouping of inline elements & this tag does not make any visual change by itself. 
+	span is very similar to the div tag, but div is a block-level tag and span is an inline tag.
+		e.g 
+
+15.How to insert a picture into a background image of a web page
+A15.To set the background image of a webpage, use the CSS style. 
+	Under the CSS <style> tag, add the property background-image. 
+	The property sets a graphic such as jpg, png, svg, gif, etc. 
+	HTML5 do not support the <body> background attribute, so CSS is used to change set background image.
+		e.g
+		<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         body {
+            background-image: url("");
+         }
+      </style>
+   </head>
+
+   <body>
+      <h1></h1>
+   </body>
+</html>
+
+16.How are active links different from normal links
+A16 the default color for active link is blue, Those that don't have a mouse cursor over that link is considered a normal link.
+	 Some browser recognize active links when the mouse cursor is placed over that link. Others recognize active links when the link has the focus. 
+
+
+17.What are the different tags to separate sections of text?
+A17.The <br> tag is one way to separate the lines of text.
+	 There are other tags like the <p> tag and <blockquote> tag that are also used to separate sections of text.
+
+18.What is SVG?
+A18.SVG stands for Scalable Vector Graphics. SVG defines vector-based graphics in XML format.
+
+19.What is difference between HTML and XHTML?
+A19	HTML is a markup language that was used to build the world's first webpage. 
+	ever since this webpage was created, there have been a lot of modifications 
+	and variations done in the HTML language, such as adding the concept of error handling, addition of new features such as a table,
+	 etc., because of which XHTML came into the picture.
+	both languages are used to build web and Android applications. 
+	however both languages are the two sides of the same coin, but there are some major differences between the two.
+	HTML stands for Hypertext Markup Language, whereas XHTML stands for Extensible Hypertext Markup Language. 
+	It is an extension of HTML and is stricter and more structured compared to HTML.
+
+20.What are logical and physical tags in HTML?
+A20.In HTML the formatting tags are divided into two categories: 
+	Physical tag: These tags are used to provide the visual appearance to the text. Logical tag: These tags are used to add some logical or semantic value to the text.
+		E,g-     <b> - Defines bold text
+			<big> - Defines big text
+			<i> - Defines italic text
+	Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page. However, both tags differ from each other as suggested by their names.
+	Logical Tags  :
+	Logical Tags are used in HTML to display the text according to the logical styles. Following are the Logical tags commonly used in HTML.
+		Logical tag e,g : <abbr> -Defines an abbreviation
+				  <del>	Defines text
+				  <ins>	Defines inserted text
+           			
+            
+         
+    
+
+	
+
+
